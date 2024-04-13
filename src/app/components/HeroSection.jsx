@@ -38,7 +38,7 @@ const HeroSection = () => {
             As an experienced front-end developer, I excel in the creation and
             refinement of web applications. Throughout my career, I've honed my
             expertise in various cutting-edge technologies such as React,
-            JavaScript, Bootstrap, SASS, TypeScript, VS Code, Git & GitHub,
+            JavaScript, Bootstrap, SASS, TypeScript, Git & GitHub,
             Tailwind, Next.js, CSS, HTML, and Redux Toolkit. My proficiency is
             not merely a result of my experience but also a demonstration of my
             dedication to remaining at the vanguard of web development.
