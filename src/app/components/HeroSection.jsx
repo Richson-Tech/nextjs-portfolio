@@ -24,11 +24,10 @@ const HeroSection = () => {
               sequence={[
                 "Folorunsho Ahmed",
                 1000,
-                "Web Developer",
+                "Frontend Developer",
                 1000,
-                "I create solutions using technologies",
-                1000
-              
+                "I create solutions",
+                1000,
               ]}
               wrapper="span"
               speed={50}
@@ -36,8 +35,14 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+            I am a seasoned front-end developer with a rich background in
+            crafting and nurturing web applications. My journey is marked by
+            mastery of an array of cutting-edge technologies, including React,
+            JavaScript, BootStrap, SASS, TypeScript, VS Code, Git & GitHub,
+            Tailwind, Next.js, CSS, HTML, and Redux Toolkit. My skills are not
+            just a reflection of my experience; they are a testament to my
+            unwavering commitment to staying at the forefront of web
+            development.
           </p>
           <div>
             <Link
