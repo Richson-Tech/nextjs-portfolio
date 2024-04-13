@@ -35,14 +35,13 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I am a seasoned front-end developer with a rich background in
-            crafting and nurturing web applications. My journey is marked by
-            mastery of an array of cutting-edge technologies, including React,
-            JavaScript, BootStrap, SASS, TypeScript, VS Code, Git & GitHub,
-            Tailwind, Next.js, CSS, HTML, and Redux Toolkit. My skills are not
-            just a reflection of my experience; they are a testament to my
-            unwavering commitment to staying at the forefront of web
-            development.
+            As an experienced front-end developer, I excel in the creation and
+            refinement of web applications. Throughout my career, I've honed my
+            expertise in various cutting-edge technologies such as React,
+            JavaScript, Bootstrap, SASS, TypeScript, VS Code, Git & GitHub,
+            Tailwind, Next.js, CSS, HTML, and Redux Toolkit. My proficiency is
+            not merely a result of my experience but also a demonstration of my
+            dedication to remaining at the vanguard of web development.
           </p>
           <div>
             <Link
