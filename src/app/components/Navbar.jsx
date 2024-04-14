@@ -3,7 +3,10 @@ import Link from "next/link";
 import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import GithubIcon from "../../../public/github-icon.svg";
+import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import MenuOverlay from "./MenuOverlay";
+
 
 const navLinks = [
   {
@@ -57,6 +60,14 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+        </div>
+        <div className="socials flex flex-row gap-2">
+          <Link href="github.com">
+            <Image src={GithubIcon} alt="Github Icon" />
+          </Link>
+          <Link href="linkedin.com">
+            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
         </div>
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
