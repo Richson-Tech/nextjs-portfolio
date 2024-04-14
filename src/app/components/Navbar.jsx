@@ -6,6 +6,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Twitter from "../../../public/twitter-icon.svg";
+import Whatsapp from "../../../public/whatsapp-icon.svg";
 import MenuOverlay from "./MenuOverlay";
 import Image from "next/image";
 
@@ -70,8 +71,11 @@ const Navbar = () => {
           <Link href="https://www.linkedin.com/in/folorunsho-ahmed-554620241/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" className="h-10" />
           </Link>
-          <Link href="https://www.linkedin.com/in/folorunsho-ahmed-554620241/">
-            <Image src={Twitter} alt="Linkedin Icon" className="h-10" />
+          <Link href="https://www.twitter.com/richsongocrazy">
+            <Image src={Twitter} alt="Twitter Icon" className="h-10" />
+          </Link>
+          <Link href="https://wa.me/message/IANVGLPYCMKFG1">
+            <Image src={Whatsapp} alt="Whatsapp Icon" className="h-10" />
           </Link>
         </div>
       </div>
