@@ -62,7 +62,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className="hidden socials flex flex-row gap-2 md:block">
+        <div className="hidden socials md:flex flex-row gap-2">
           <Link href="https://github.com/Richson-Tech">
             <Image src={GithubIcon} alt="Github Icon " className="h-10" />
           </Link>
