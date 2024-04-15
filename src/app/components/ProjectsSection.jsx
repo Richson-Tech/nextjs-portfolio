@@ -92,12 +92,12 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
+          name="static"
           isSelected={tag === "Web"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
+          name="dynamic"
           isSelected={tag === "Mobile"}
         />
       </div>
