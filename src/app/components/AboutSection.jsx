@@ -8,12 +8,14 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
         <li>JavaScript</li>
-        <li>React</li>
+        <li>React.js</li>
+        <li>Tailwind CSS</li>
+        <li>TypeScript</li>
+        <li>Redux</li>
+        <li>Next.js</li>
+        <li>Node.js</li>
+        <li>Git & Github</li>
       </ul>
     ),
   },
@@ -22,18 +24,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Bachelor in Computer Science</li>
+        <li className="text-base font-thin text-[#A7A7A7]">University of Lagos, Nigeria</li>
       </ul>
     ),
   },
@@ -61,7 +53,7 @@ const AboutSection = () => {
             brands and work for companies to fix world problems with the use of
             my technical experience.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-between mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -76,13 +68,7 @@ const AboutSection = () => {
               {" "}
               Education{" "}
             </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
-            </TabButton>
+        
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
