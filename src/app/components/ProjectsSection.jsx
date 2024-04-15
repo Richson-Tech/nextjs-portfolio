@@ -7,10 +7,10 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
+    title: "React Nike Website",
     description: "Project 1 description",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
+    tag: ["All", "dynamic"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -93,12 +93,12 @@ const ProjectsSection = () => {
         <ProjectTag
           onClick={handleTagChange}
           name="static"
-          isSelected={tag === "Web"}
+          isSelected={tag === "static"}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="dynamic"
-          isSelected={tag === "Mobile"}
+          isSelected={tag === "dynamic"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
