@@ -17,7 +17,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Todo-list and reminder Website",
+    title: "Todo-list and reminder Website.",
     description: "CRUD operations",
     image: "/images/projects/2.png",
     tag: ["All", "dynamic"],
@@ -37,7 +37,7 @@ const projectsData = [
   {
     id: 4,
     title: "Food Ordering Application",
-    description: "Project 4 description",
+    description: "Authentication and CRUD operations.",
     image: "/images/projects/4.png",
     tag: ["All", "dynamic"],
     gitUrl: "/",
@@ -46,7 +46,7 @@ const projectsData = [
   {
     id: 5,
     title: "Website for a gym house",
-    description: "Authentication and CRUD operations",
+    description: "A static gym website created with react.js and SASS.",
     image: "/images/projects/5.png",
     tag: ["All", "static"],
     gitUrl: "/",
@@ -55,7 +55,7 @@ const projectsData = [
   {
     id: 6,
     title: "Youtube clone",
-    description: "Project 5 description",
+    description: "The Youtube website clone is built using Next.js and enhanced with the sleek design of Tailwind CSS. Leveraging the Unsplash API for stunning visuals and Redux Toolkit for seamless state management.",
     image: "/images/projects/6.png",
     tag: ["All", "dynamic"],
     gitUrl: "/",
