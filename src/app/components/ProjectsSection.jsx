@@ -8,7 +8,8 @@ const projectsData = [
   {
     id: 1,
     title: "E-commerce Website",
-    description: "Project 1 description",
+    description:
+      "An e-commerce website. Leveraging the capabilities of Next.js,typeScript and Prisma, powered by JavaScript, this platform serves as a digital marketplace, connecting buyers and sellers in a seamless online shopping experience.",
     image: "/images/projects/1.png",
     tag: ["All", "dynamic"],
     gitUrl: "/",
@@ -17,7 +18,7 @@ const projectsData = [
   {
     id: 2,
     title: "Todo-list and reminder Website",
-    description: "Project 2 description",
+    description: "CRUD operations",
     image: "/images/projects/2.png",
     tag: ["All", "dynamic"],
     gitUrl: "/",
