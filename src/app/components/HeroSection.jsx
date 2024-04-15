@@ -21,16 +21,7 @@ const HeroSection = () => {
             </span>
             <br></br>
             <TypeAnimation
-              sequence={[
-                "Folorunsho Ahmed",
-                1000,
-                "Frontend Developer",
-                1000,
-                "I create solutions",
-                1000,
-                "using technologies",
-                1000,
-              ]}
+              sequence={["Folorunsho Ahmed", 1000, "Frontend Developer", 1000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
@@ -40,10 +31,10 @@ const HeroSection = () => {
             As an experienced front-end developer, I excel in the creation and
             refinement of web applications. Throughout my career, I've honed my
             expertise in various cutting-edge technologies such as React,
-            JavaScript, Bootstrap, SASS, TypeScript, Git & GitHub,
-            Tailwind, Next.js, CSS, HTML, and Redux Toolkit. My proficiency is
-            not merely a result of my experience but also a demonstration of my
-            dedication to remaining at the vanguard of web development.
+            JavaScript, Bootstrap, SASS, TypeScript, Git & GitHub, Tailwind,
+            Next.js, CSS, HTML, and Redux Toolkit. My proficiency is not merely
+            a result of my experience but also a demonstration of my dedication
+            to remaining at the vanguard of web development.
           </p>
           <div>
             <Link
@@ -52,7 +43,8 @@ const HeroSection = () => {
             >
               Hire Me
             </Link>
-            <Link download="resume.pdf"
+            <Link
+              download="resume.pdf"
               href="resume.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
