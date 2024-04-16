@@ -81,13 +81,51 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">
             My Work Experience
           </h2>
-          <div className="flex flex-row text-white">
-            <div className="flex flex-col">
-              <p>Global Axis</p>
-              <p>April 2022 - Sep 2022</p>
+          <div className="space-y-4">
+            <div className="flex flex-row justify-between text-white">
+              <div className="flex flex-col">
+                <p>Frontend Developer Intern</p>
+                <li className="text-base font-thin text-[#A7A7A7]">
+                  Global Axis
+                </li>
+              </div>
+              <div className="flex flex-col">
+                <p>Full-time</p>
+                <li className="text-base font-thin text-[#A7A7A7]">
+                  April 2022 - Sep 2022
+                </li>
+              </div>
             </div>
-            
-         </div>
+
+            <div className="flex flex-row justify-between text-white">
+              <div className="flex flex-col">
+                <p>Frontend Developer</p>
+                <li className="text-base font-thin text-[#A7A7A7]">
+                  Ajian Labs
+                </li>
+              </div>
+              <div className="flex flex-col">
+                <p>part-time</p>
+                <li className="text-base font-thin text-[#A7A7A7]">
+                Jan 2023 - Nov 2023.
+                </li>
+              </div>
+            </div>
+            <div className="flex flex-row justify-between text-white">
+              <div className="flex flex-col">
+                <p>Frontend Developer</p>
+                <li className="text-base font-thin text-[#A7A7A7]">
+                  Freelance
+                </li>
+              </div>
+              <div className="flex flex-col">
+                <p>Full-time</p>
+                <li className="text-base font-thin text-[#A7A7A7]">
+                  Dec 2023 - Till now.
+                </li>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
