@@ -79,7 +79,7 @@ const AboutSection = () => {
         <section id="experience">
           {/* Second About Me Part */}
           <div className="md:w-1/2 mt-5 md:mt-0 text-left flex flex-col">
-            <h2 className="text-4xl font-bold text-white mb-4 text-center">
+            <h2 className="text-4xl font-bold text-white mb-4 md:w-full">
               My Work Experience
             </h2>
             <div className="space-y-4">
