@@ -53,7 +53,6 @@ const HeroSection = () => {
                 Download CV
               </span>
             </a>
-            {/* <DownloadButton fileUrl={resumeUrl} fileName={resumeFileName}/> */}
           </div>
         </motion.div>
         <motion.div
