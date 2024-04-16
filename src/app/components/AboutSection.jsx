@@ -77,8 +77,8 @@ const AboutSection = () => {
           </div>
         </div>
         {/* Second About Me Part */}
-        <div className="md:w-1/2 mt-1 md:mt-0 text-left flex flex-col">
-          <h2 className="text-4xl font-bold text-white mb-4">
+        <div className="md:w-1/2 mt-5 md:mt-0 text-left flex flex-col">
+          <h2 className="text-4xl font-bold text-white mb-4 text-center">
             My Work Experience
           </h2>
           <div className="space-y-4">
