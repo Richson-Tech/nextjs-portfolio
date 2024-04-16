@@ -4,8 +4,12 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import DownloadButton from "./DownloadButton";
 
 const HeroSection = () => {
+  const resumeUrl = '/images/resume.png'; // Path to your resume file
+  const resumeFileName = 'resume.pdf'; // Name of your resume file
+
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -52,6 +56,7 @@ const HeroSection = () => {
                 Download CV
               </span>
             </Link>
+            {/* <DownloadButton fileUrl={resumeUrl} fileName={resumeFileName}/> */}
           </div>
         </motion.div>
         <motion.div
