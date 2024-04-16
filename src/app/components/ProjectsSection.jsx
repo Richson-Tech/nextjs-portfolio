@@ -12,8 +12,8 @@ const projectsData = [
       "An e-commerce website. Leveraging the capabilities of Next.js,typeScript and Prisma, powered by JavaScript, this platform serves as a digital marketplace, connecting buyers and sellers in a seamless online shopping experience.",
     image: "/images/projects/1.png",
     tag: ["All", "dynamic"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Richson-Tech/nike-store",
+    previewUrl: "https://nike-store-self.vercel.app/",
   },
   {
     id: 2,
@@ -40,8 +40,8 @@ const projectsData = [
     description: "Authentication and CRUD operations.",
     image: "/images/projects/4.png",
     tag: ["All", "dynamic"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Richson-Tech/foodland",
+    previewUrl: "https://foodland-nu.vercel.app/",
   },
   {
     id: 5,
