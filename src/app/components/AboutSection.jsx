@@ -48,7 +48,7 @@ const AboutSection = () => {
       <div className="md:flex justify-between py-8 space-x-5 px-4 xl:gap-1p sm:py-16 xl:px-16">
         {/* First About Me Part */}
         <div className="md:w-1/2 mt-1 md:mt-0 text-left flex flex-col">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">About <span className="text-secondary-600">Me</span></h2>
           <p className="text-base lg:text-lg">
             My line of Expertise I help in finding solutions and solve problems
             with my technical skills, making the unreachable services available
@@ -80,7 +80,7 @@ const AboutSection = () => {
           {/* Second About Me Part */}
           <div className="md:w-1/2 mt-5 md:mt-0 text-left flex flex-col">
             <h2 className="text-4xl font-bold text-white mb-4 md:w-full">
-              My Work Experience
+              My Work <span className="text-secondary-600">Experience</span>
             </h2>
             <div className="space-y-4">
               <div className="flex flex-row justify-between text-white">
