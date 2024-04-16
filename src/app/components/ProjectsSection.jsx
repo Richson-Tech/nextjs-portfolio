@@ -21,7 +21,7 @@ const projectsData = [
     description: "CRUD operations.",
     image: "/images/projects/2.png",
     tag: ["All", "dynamic"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Richson-Tech/todos",
     previewUrl: "/",
   },
   {
@@ -31,7 +31,7 @@ const projectsData = [
       "The Password generator utillizes the information the user provides, such as your date of birth and full-name, to craft unique and robust passwords tailored to you. By combining these personal details with advanced algorithms, it generate random passwords that are virtually impossible to guess yet easy to remember. ",
     image: "/images/projects/3.png",
     tag: ["All", "dynamic"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Richson-Tech/password-generator-react",
     previewUrl: "/",
   },
   {
