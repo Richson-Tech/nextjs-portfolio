@@ -21,8 +21,8 @@ const projectsData = [
     description: "CRUD operations.",
     image: "/images/projects/2.png",
     tag: ["All", "dynamic"],
-    gitUrl: "https://github.com/Richson-Tech/todos",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Richson-Tech/drag-and-drop-todos-list",
+    previewUrl: "https://task-manager-taupe-six.vercel.app/",
   },
   {
     id: 3,
