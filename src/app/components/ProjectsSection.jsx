@@ -18,7 +18,7 @@ const projectsData = [
   {
     id: 2,
     title: "Todo-list and reminder Website.",
-    description: "CRUD operations",
+    description: "CRUD operations.",
     image: "/images/projects/2.png",
     tag: ["All", "dynamic"],
     gitUrl: "/",
