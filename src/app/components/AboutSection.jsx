@@ -84,25 +84,6 @@ const AboutSection = () => {
         brands and work for companies to fix world problems with the use of
         my technical experience.
       </p>
-      <div className="flex flex-row justify-between mt-8">
-        <TabButton
-          selectTab={() => handleTabChange("skills")}
-          active={tab === "skills"}
-        >
-          {" "}
-          Skills{" "}
-        </TabButton>
-        <TabButton
-          selectTab={() => handleTabChange("education")}
-          active={tab === "education"}
-        >
-          {" "}
-          Education{" "}
-        </TabButton>
-      </div>
-      <div className="mt-8">
-        {TAB_DATA.find((t) => t.id === tab).content}
-      </div>
     </div>
   </div>
 </section>
