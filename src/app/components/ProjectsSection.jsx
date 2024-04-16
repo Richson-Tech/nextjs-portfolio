@@ -49,8 +49,8 @@ const projectsData = [
     description: "A static gym website created with react.js and SASS.",
     image: "/images/projects/5.png",
     tag: ["All", "static"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Richson-Tech/fit-club",
+    previewUrl: "fit-club-eight.vercel.app",
   },
   {
     id: 6,
