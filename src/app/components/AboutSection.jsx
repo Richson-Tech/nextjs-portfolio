@@ -85,7 +85,7 @@ const AboutSection = () => {
             <div className="flex flex-row justify-between text-white">
               <div className="flex flex-col">
                 <p>Frontend Developer Intern</p>
-                <li className="text-base font-thin text-[#A7A7A7]">
+                <li className="text-base font-thin text-[#A7A7A7] list-disc">
                   Global Axis
                 </li>
               </div>
@@ -121,7 +121,7 @@ const AboutSection = () => {
               <div className="flex flex-col">
                 <p>Full-time</p>
                 <li className="text-base font-thin text-[#A7A7A7]">
-                  Dec 2023 - Till now.
+                Dec 2023 - Till now.
                 </li>
               </div>
             </div>
