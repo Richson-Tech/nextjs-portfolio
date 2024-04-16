@@ -59,7 +59,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "dynamic"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://clone-90e87.web.app/",
   },
 ];
 
