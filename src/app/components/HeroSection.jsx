@@ -30,7 +30,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl lg:space-x-3">
             As an experienced front-end developer, I excel in the creation and
-            refinement of web applications. Throughout my career, I've honed my
+            refinement of web applications. Throughout my career, I&apos;ve honed my
             expertise in various cutting-edge technologies such as React,
             JavaScript, Bootstrap, SASS, TypeScript, Git & GitHub, Tailwind,
             Next.js, CSS, HTML, and Redux Toolkit. My proficiency is not merely
