@@ -75,7 +75,6 @@ const AboutSection = () => {
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
-      <Experience/>
       </div>
     </section>
   );
