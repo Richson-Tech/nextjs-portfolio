@@ -81,11 +81,13 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">
             My Work Experience
           </h2>
-          <p className="text-base lg:text-lg">
-            I worked with various types of technologies and well experieced
-            developers. Collaborated with Senior Developers to develop
-            initiatives to build confidence.
-          </p>
+          <div className="flex flex-row text-white">
+            <div className="flex flex-col">
+              <p>Global Axis</p>
+              <p>April 2022 - Sep 2022</p>
+            </div>
+            
+         </div>
         </div>
       </div>
     </section>
