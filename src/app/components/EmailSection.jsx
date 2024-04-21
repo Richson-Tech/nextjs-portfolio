@@ -16,7 +16,6 @@ const EmailSection = () => {
   }
 
   const handleFormSubmit = async (event) => {
-    event.preventDefault();
 
     
       const response = await fetch("https://formspree.io/f/mpzvklrd", {
