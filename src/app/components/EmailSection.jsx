@@ -9,7 +9,6 @@ import Image from "next/image";
 import { useForm, ValidationError } from "@formspree/react";
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [state, handleSubmit] = useForm("https://formspree.io/f/mpzvklrd");
 
   if (state.succeeded) {
