@@ -26,7 +26,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Bachelor in Computer Science</li>
         <li className="text-base text-[#A7A7A7]">
-          University of Lagos, Nigeria
+          University of Lagos, Nigeria.
         </li>
       </ul>
     ),
