@@ -67,9 +67,13 @@ const EmailSection = () => {
         {submitted ? (
           <>
             <div className="flex flex-col justify-center items-center">
-             <Image src={Email} alt="Email Icon" className="h-20" />
-             <h1 className="text-white lg:text-5xl md:text-4xl sm:text-3xl mb-3">Message sent!</h1>
-             <p className="text-white">Thanks for contacting me, I will get in touch with you shortly.</p>
+              <Image src={Email} alt="Email Icon" className="h-20" />
+              <h1 className="text-white lg:text-5xl md:text-4xl sm:text-3xl mb-3">
+                Message sent!
+              </h1>
+              <p className="text-white">
+                Thanks for contacting me, I will get in touch with you shortly.
+              </p>
             </div>
           </>
         ) : (
