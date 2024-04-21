@@ -4,6 +4,7 @@ import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Twitter from "../../../public/twitter-icon.svg";
 import Whatsapp from "../../../public/whatsapp-icon.svg";
+import Email from "../../../public/email-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 import { useForm, ValidationError } from "@formspree/react";
@@ -65,9 +66,10 @@ const EmailSection = () => {
       <div>
         {submitted ? (
           <>
-            <div className="flex flex-row justify-center items-center text-white">
-              <h2 className="">Message sent!</h2>
-              <p className="">Thanks for contacting me, I will get in touch with you shortly.</p>
+            <div className="flex flex-row justify-center items-center">
+             <Image src={Email} alt="Email Icon" className="h-10" />
+             <h1 class="lg:text-5xl md:text-4xl sm:text-3xl ">Message sent!</h1>
+             <p>Thanks for contacting me, I will get in touch with you shortly.</p>
             </div>
           </>
         ) : (
