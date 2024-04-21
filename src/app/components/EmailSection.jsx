@@ -6,7 +6,6 @@ import Twitter from "../../../public/twitter-icon.svg";
 import Whatsapp from "../../../public/whatsapp-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
-import ValidationError from "./ValidationError";
 import { useForm, ValidationError } from "@formspree/react";
 
 const EmailSection = () => {
@@ -16,7 +15,6 @@ const EmailSection = () => {
   if (state.succeeded) {
     return <p>Thanks for your submission!</p>;
   }
-
 
   return (
     <section
@@ -50,67 +48,74 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-        {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">
-            Email sent successfully!
-          </p>
-        ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
-            <div className="mb-6">
-              <label
-                htmlFor="email"
-                className="text-white block mb-2 text-sm font-medium"
-              >
-                Your email
-              </label>
-              <input
-                name="email"
-                type="email"
-                id="email"
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
-              />
-              </div>
-              <ValidationError prefix="Email" field="email" errors={state.errors} />
-            <div className="mb-6">
-              <label
-                htmlFor="subject"
-                className="text-white block text-sm mb-2 font-medium"
-              >
-                Subject
-              </label>
-              <input
-                name="subject"
-                type="text"
-                id="subject"
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="message"
-                className="text-white block text-sm mb-2 font-medium"
-              >
-                Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Let's talk about..."
-              />
-            </div>
-            <button
-              type="submit"
-              className=" bg-secondary-500 hover:bg-blue-00 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+        <form className="flex flex-col" onSubmit={handleSubmit}>
+          <div className="mb-6">
+            <label
+              htmlFor="email"
+              className="text-white block mb-2 text-sm font-medium"
             >
-              Send Message
-            </button>
-          </form>
-        )}
+              Your email
+            </label>
+            <input
+              name="email"
+              type="email"
+              id="email"
+              required
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="jacob@google.com"
+            />
+          </div>
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <div className="mb-6">
+            <label
+              htmlFor="subject"
+              className="text-white block text-sm mb-2 font-medium"
+            >
+              Subject
+            </label>
+            <input
+              name="subject"
+              type="text"
+              id="subject"
+              required
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="Just saying hi"
+            />
+
+            <ValidationError
+              prefix=" Subject"
+              field="subject"
+              errors={state.errors}
+            />
+          </div>
+          <div className="mb-6">
+            <label
+              htmlFor="message"
+              className="text-white block text-sm mb-2 font-medium"
+            >
+              Message
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="Let's talk about..."
+            />
+            <ValidationError
+              prefix=" Message"
+              field="message"
+              errors={state.errors}
+            />
+          </div>
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className=" bg-secondary-500 hover:bg-blue-00 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+          >
+            Send Message
+          </button>
+          <ValidationError errors={state.errors} />
+        </form>
       </div>
     </section>
   );
