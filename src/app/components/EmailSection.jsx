@@ -65,8 +65,10 @@ const EmailSection = () => {
       <div>
         {submitted ? (
           <>
-            <p className="text-white">Message sent!</p>
-            <p className="text-white">Thanks for your submission!</p>
+            <div className="flex flex-row justify-center items-center text-white">
+              <h2 className="">Message sent!</h2>
+              <p className="">Thanks for contacting me, I will get in touch with you shortly.</p>
+            </div>
           </>
         ) : (
           <form className="flex flex-col" onSubmit={handleFormSubmit}>
