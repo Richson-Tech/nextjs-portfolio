@@ -6,14 +6,17 @@ import Twitter from "../../../public/twitter-icon.svg";
 import Whatsapp from "../../../public/whatsapp-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import ValidationError from "./ValidationError";
+import { useForm, ValidationError } from "@formspree/react";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [state, handleSubmit] = useForm("https://formspree.io/f/mpzvklrd");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-  
-  };
+  if (state.succeeded) {
+    return <p>Thanks for your submission!</p>;
+  }
+
 
   return (
     <section
@@ -68,7 +71,8 @@ const EmailSection = () => {
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 placeholder="jacob@google.com"
               />
-            </div>
+              </div>
+              <ValidationError prefix="Email" field="email" errors={state.errors} />
             <div className="mb-6">
               <label
                 htmlFor="subject"
