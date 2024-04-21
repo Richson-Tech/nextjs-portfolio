@@ -101,13 +101,13 @@ const AboutSection = () => {
               <div className="flex flex-row justify-between text-white">
                 <div className="flex flex-col">
                   <p>Frontend Developer</p>
-                  <li className="text-base font-thin text-[#A7A7A7]">
+                  <li className="text-base text-[#A7A7A7]">
                     Ajian Labs
                   </li>
                 </div>
                 <div className="flex flex-col">
                   <p>part-time</p>
-                  <li className="text-base font-thin text-[#A7A7A7]">
+                  <li className="text-base text-[#A7A7A7]">
                     Jan 2023 - Nov 2023.
                   </li>
                 </div>
@@ -115,13 +115,13 @@ const AboutSection = () => {
               <div className="flex flex-row justify-between text-white">
                 <div className="flex flex-col">
                   <p>Frontend Developer</p>
-                  <li className="text-base font-thin text-[#A7A7A7]">
+                  <li className="text-base text-[#A7A7A7]">
                     Freelance
                   </li>
                 </div>
                 <div className="flex flex-col">
                   <p>Full-time</p>
-                  <li className="text-base font-thin text-[#A7A7A7]">
+                  <li className="text-base text-[#A7A7A7]">
                     Dec 2023 - Till now.
                   </li>
                 </div>
