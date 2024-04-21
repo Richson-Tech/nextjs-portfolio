@@ -86,13 +86,13 @@ const AboutSection = () => {
               <div className="flex flex-row justify-between text-white">
                 <div className="flex flex-col">
                   <p>Frontend Developer Intern</p>
-                  <li className="text-base font-thin text-[#A7A7A7] list-disc">
+                  <li className="text-base text-[#A7A7A7] list-disc">
                     Global Axis
                   </li>
                 </div>
                 <div className="flex flex-col">
                   <p>Full-time</p>
-                  <li className="text-base font-thin text-[#A7A7A7]">
+                  <li className="text-base text-[#A7A7A7]">
                     April 2022 - Sep 2022
                   </li>
                 </div>
