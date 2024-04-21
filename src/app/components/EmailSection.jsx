@@ -15,6 +15,24 @@ const EmailSection = () => {
     return <p>Thanks for your submission!</p>;
   }
 
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+
+    
+      const response = await fetch("https://formspree.io/f/mpzvklrd", {
+        method: "POST",
+        mode: "no-cors", // Use no-cors mode to bypass CORS restrictions
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: event.target.email.value,
+          subject: event.target.subject.value,
+          message: event.target.message.value,
+        }),
+      });
+    }
+
   return (
     <section
       id="contact"
@@ -47,7 +65,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-        <form className="flex flex-col" onSubmit={handleSubmit}>
+        <form className="flex flex-col" onSubmit={handleFormSubmit}>
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -61,7 +79,7 @@ const EmailSection = () => {
               id="email"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="jacob@google.com"
+              placeholder="your email"
             />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
           </div>
@@ -78,7 +96,7 @@ const EmailSection = () => {
               id="subject"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Just saying hi"
+              placeholder="subject of your mail"
             />
 
             <ValidationError
