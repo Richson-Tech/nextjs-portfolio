@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const HeroSection = () => {
-
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -30,12 +29,12 @@ const HeroSection = () => {
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl lg:space-x-3">
             As an experienced front-end developer, I excel in the creation and
-            refinement of web applications. Throughout my career, I&apos;ve honed my
-            expertise in various cutting-edge technologies such as React,
-            JavaScript, Bootstrap, SASS, TypeScript, Git & GitHub, Tailwind,
-            Next.js, CSS, HTML, and Redux Toolkit. My proficiency is not merely
-            a result of my experience but also a demonstration of my dedication
-            to remaining at the vanguard of web development.
+            refinement of web applications. Throughout my career, I&apos;ve
+            honed my expertise in various cutting-edge technologies such as
+            React, JavaScript, Bootstrap, SASS, TypeScript, Git & GitHub,
+            Tailwind, Next.js, CSS, HTML, and Redux Toolkit. My proficiency is
+            not merely a result of my experience but also a demonstration of my
+            dedication to remaining at the vanguard of web development.
           </p>
           <div>
             <Link
@@ -45,7 +44,6 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <a
-              
               href="/folorunshoAhmedCV.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
