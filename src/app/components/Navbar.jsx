@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import GithubIcon from "../../../public/github-icon.svg";
@@ -31,6 +31,26 @@ const navLinks = [
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  // Close navbar if clicking outside the menu
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setNavbarOpen(false);
+      }
+    };
+
+    if (navbarOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [navbarOpen]);
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-40 bg-[#121212] bg-opacity-100">
@@ -82,7 +102,11 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? (
+        <div ref={menuRef}>
+          <MenuOverlay links={navLinks} />
+        </div>
+      ) : null}
     </nav>
   );
 };
