@@ -1,32 +1,19 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
-import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Twitter from "../../../public/twitter-icon.svg";
 import Whatsapp from "../../../public/whatsapp-icon.svg";
 import MenuOverlay from "./MenuOverlay";
-import Image from "next/image";
 
 const navLinks = [
-  {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Projects",
-    path: "#projects",
-  },
-  {
-    title: "Contact",
-    path: "#contact",
-  },
-  {
-    title: "Experience",
-    path: "#experience",
-  },
+  { title: "About", path: "#about" },
+  { title: "Projects", path: "#projects" },
+  { title: "Contact", path: "#contact" },
+  { title: "Experience", path: "#experience" },
 ];
 
 const Navbar = () => {
@@ -82,14 +69,19 @@ const Navbar = () => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+                <Link
+                  href={link.path}
+                  className="text-white hover:text-secondary-600"
+                >
+                  {link.title}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
         <div className="hidden socials md:flex flex-row gap-2">
           <Link href="https://github.com/Richson-Tech">
-            <Image src={GithubIcon} alt="Github Icon " className="h-10" />
+            <Image src={GithubIcon} alt="Github Icon" className="h-10" />
           </Link>
           <Link href="https://www.linkedin.com/in/folorunsho-ahmed-554620241/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" className="h-10" />
@@ -102,11 +94,11 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      {navbarOpen ? (
+      {navbarOpen && (
         <div ref={menuRef}>
-          <MenuOverlay links={navLinks} />
+          <MenuOverlay links={navLinks} closeMenu={() => setNavbarOpen(false)} />
         </div>
-      ) : null}
+      )}
     </nav>
   );
 };
