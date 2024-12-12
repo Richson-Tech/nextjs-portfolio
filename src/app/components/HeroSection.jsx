@@ -15,7 +15,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-3xl sm:text-5xl xl:text-8xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-4 text-3xl sm:text-5xl xl:text-6xl 2xl:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Hello, I&apos;m{" "}
             </span>
@@ -59,7 +59,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className=" relative mt-10 w-[250px] h-[250px] xl:w-[400px] xl:h-[400px]">
+          <div className=" relative mt-10 w-[250px] h-[250px] xl:w-[300px] xl:h-[300px] 2xl:w-[400px] 2xl:h-[400px]">
             <Image
               src="/images/me.jpg"
               alt="Ahmed"
