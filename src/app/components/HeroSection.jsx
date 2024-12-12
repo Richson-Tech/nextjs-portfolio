@@ -15,7 +15,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-3xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-4 text-3xl sm:text-5xl xl:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Hello, I&apos;m{" "}
             </span>
@@ -27,7 +27,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl lg:space-x-3">
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-lg lg:space-x-3">
             As an experienced front-end developer, I excel in the creation and
             refinement of web applications. Throughout my career, I&apos;ve
             honed my expertise in various cutting-edge technologies such as
@@ -59,7 +59,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className=" relative mt-10 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
+          <div className=" relative mt-10 w-[250px] h-[250px] xl:w-[400px] xl:h-[400px]">
             <Image
               src="/images/me.jpg"
               alt="Ahmed"
