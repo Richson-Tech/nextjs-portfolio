@@ -96,7 +96,10 @@ const Navbar = () => {
       </div>
       {navbarOpen && (
         <div ref={menuRef}>
-          <MenuOverlay links={navLinks} closeMenu={() => setNavbarOpen(false)} />
+          <MenuOverlay
+            links={navLinks}
+            closeMenu={() => setNavbarOpen(false)}
+          />
         </div>
       )}
     </nav>
