@@ -28,13 +28,14 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-lg lg:space-x-3">
-            As an experienced front-end developer, I excel in the creation and
+            As an experienced software developer, I excel in the creation and
             refinement of web applications. Throughout my career, I&apos;ve
             honed my expertise in various cutting-edge technologies such as
-            React, JavaScript, Bootstrap, SASS, TypeScript, Git & GitHub,
-            Tailwind, Next.js, CSS, HTML, and Redux Toolkit. My proficiency is
-            not merely a result of my experience but also a demonstration of my
-            dedication to remaining at the vanguard of web development.
+            React, JavaScript, Bootstrap, SASS, TypeScript, Express, NodeJs, SQL
+            and non SQL data bases, Git & GitHub, Tailwind, Next.js, CSS, HTML,
+            and Redux Toolkit. My proficiency is not merely a result of my
+            experience but also a demonstration of my dedication to remaining at
+            the vanguard of web development.
           </p>
           <div>
             <Link
